@@ -1,0 +1,708 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>ACER-PC</Machine>
+    <WindowsUser>ACER</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows 8.1</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>e7ded8df-d9db-4d97-8ddf-6223d86b81eb</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>58E34A6A6AD54301C81C8FFEC438D37D90EDEB9AB2860FD4F9C6385EB7EEE64C</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>e7ded8df-d9db-4d97-8ddf-6223d86b81eb_1.0.0.0_neutral__3gx5rry0ccnx8</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>e7ded8df-d9db-4d97-8ddf-6223d86b81eb_3gx5rry0ccnx8!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>e7ded8df-d9db-4d97-8ddf-6223d86b81eb</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=ACER</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-10-05T10:04:42.380</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\bin\Debug\2Dtank_sim_game.exe">
+      <PackagePath>2Dtank_sim_game.exe</PackagePath>
+      <Modified>2015-10-05T11:18:30.056</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-06T14:05:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-06T14:05:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-06T14:05:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-06T14:05:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\1.png">
+      <PackagePath>img\1.png</PackagePath>
+      <Modified>2015-09-21T08:51:34.543</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\10.png">
+      <PackagePath>img\10.png</PackagePath>
+      <Modified>2015-09-21T08:51:34.660</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\100.png">
+      <PackagePath>img\100.png</PackagePath>
+      <Modified>2015-09-22T11:14:13.965</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\101.png">
+      <PackagePath>img\101.png</PackagePath>
+      <Modified>2015-09-22T11:14:13.981</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\102.png">
+      <PackagePath>img\102.png</PackagePath>
+      <Modified>2015-09-22T11:14:13.996</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\103.png">
+      <PackagePath>img\103.png</PackagePath>
+      <Modified>2015-09-22T11:14:13.996</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\104.png">
+      <PackagePath>img\104.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.012</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\105.png">
+      <PackagePath>img\105.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.028</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\106.png">
+      <PackagePath>img\106.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.028</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\107.png">
+      <PackagePath>img\107.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.043</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\108.png">
+      <PackagePath>img\108.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.059</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\109.png">
+      <PackagePath>img\109.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.074</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\11.png">
+      <PackagePath>img\11.png</PackagePath>
+      <Modified>2015-09-21T08:51:34.672</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\110.png">
+      <PackagePath>img\110.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.090</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\111.png">
+      <PackagePath>img\111.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.106</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\112.png">
+      <PackagePath>img\112.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.106</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\113.png">
+      <PackagePath>img\113.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.121</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\114.png">
+      <PackagePath>img\114.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.137</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\115.png">
+      <PackagePath>img\115.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.137</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\116.png">
+      <PackagePath>img\116.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.153</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\117.png">
+      <PackagePath>img\117.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.168</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\118.png">
+      <PackagePath>img\118.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.168</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\119.png">
+      <PackagePath>img\119.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.184</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\12.png">
+      <PackagePath>img\12.png</PackagePath>
+      <Modified>2015-09-21T08:51:34.684</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\120.png">
+      <PackagePath>img\120.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.184</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\121.png">
+      <PackagePath>img\121.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.299</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\122.png">
+      <PackagePath>img\122.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.314</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\123.png">
+      <PackagePath>img\123.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.330</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\124.png">
+      <PackagePath>img\124.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.330</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\125.png">
+      <PackagePath>img\125.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.345</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\126.png">
+      <PackagePath>img\126.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.361</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\127.png">
+      <PackagePath>img\127.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.408</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\128.png">
+      <PackagePath>img\128.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.424</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\129.png">
+      <PackagePath>img\129.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.439</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\13.png">
+      <PackagePath>img\13.png</PackagePath>
+      <Modified>2015-09-21T08:51:34.709</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\130.png">
+      <PackagePath>img\130.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.486</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\131.png">
+      <PackagePath>img\131.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.486</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\132.png">
+      <PackagePath>img\132.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.502</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\133.png">
+      <PackagePath>img\133.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.533</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\134.png">
+      <PackagePath>img\134.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.549</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\135.png">
+      <PackagePath>img\135.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.564</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\136.png">
+      <PackagePath>img\136.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.580</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\137.png">
+      <PackagePath>img\137.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.595</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\138.png">
+      <PackagePath>img\138.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.611</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\139.png">
+      <PackagePath>img\139.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.627</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\14.png">
+      <PackagePath>img\14.png</PackagePath>
+      <Modified>2015-09-21T08:51:34.721</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\140.png">
+      <PackagePath>img\140.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.642</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\141.png">
+      <PackagePath>img\141.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.658</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\142.png">
+      <PackagePath>img\142.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.674</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\143.png">
+      <PackagePath>img\143.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.689</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\144.png">
+      <PackagePath>img\144.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.705</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\145.png">
+      <PackagePath>img\145.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.720</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\146.png">
+      <PackagePath>img\146.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.736</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\147.png">
+      <PackagePath>img\147.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.752</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\148.png">
+      <PackagePath>img\148.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.767</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\149.png">
+      <PackagePath>img\149.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.783</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\15.png">
+      <PackagePath>img\15.png</PackagePath>
+      <Modified>2015-09-21T08:51:34.733</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\150.png">
+      <PackagePath>img\150.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.799</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\151.png">
+      <PackagePath>img\151.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.830</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\152.png">
+      <PackagePath>img\152.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.861</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\153.png">
+      <PackagePath>img\153.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.877</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\154.png">
+      <PackagePath>img\154.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.892</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\155.png">
+      <PackagePath>img\155.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.908</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\156.png">
+      <PackagePath>img\156.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.924</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\157.png">
+      <PackagePath>img\157.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.939</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\158.png">
+      <PackagePath>img\158.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.955</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\159.png">
+      <PackagePath>img\159.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.970</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\16.png">
+      <PackagePath>img\16.png</PackagePath>
+      <Modified>2015-09-21T08:51:34.744</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\160.png">
+      <PackagePath>img\160.png</PackagePath>
+      <Modified>2015-09-22T11:14:14.986</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\161.png">
+      <PackagePath>img\161.png</PackagePath>
+      <Modified>2015-09-22T11:14:15.002</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\162.png">
+      <PackagePath>img\162.png</PackagePath>
+      <Modified>2015-09-22T11:14:15.017</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\163.png">
+      <PackagePath>img\163.png</PackagePath>
+      <Modified>2015-09-22T11:14:15.017</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\164.png">
+      <PackagePath>img\164.png</PackagePath>
+      <Modified>2015-09-22T11:14:30.703</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\165.png">
+      <PackagePath>img\165.png</PackagePath>
+      <Modified>2015-09-22T11:14:30.703</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\166.png">
+      <PackagePath>img\166.png</PackagePath>
+      <Modified>2015-09-22T11:14:30.656</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\167.png">
+      <PackagePath>img\167.png</PackagePath>
+      <Modified>2015-09-22T11:14:30.671</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\168.png">
+      <PackagePath>img\168.png</PackagePath>
+      <Modified>2015-09-22T11:14:30.687</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\17.png">
+      <PackagePath>img\17.png</PackagePath>
+      <Modified>2015-09-21T08:51:34.758</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\18.png">
+      <PackagePath>img\18.png</PackagePath>
+      <Modified>2015-09-21T08:51:34.770</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\19.png">
+      <PackagePath>img\19.png</PackagePath>
+      <Modified>2015-09-21T08:51:34.781</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\2.png">
+      <PackagePath>img\2.png</PackagePath>
+      <Modified>2015-09-21T08:51:34.557</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\20.png">
+      <PackagePath>img\20.png</PackagePath>
+      <Modified>2015-09-21T08:51:34.792</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\21.png">
+      <PackagePath>img\21.png</PackagePath>
+      <Modified>2015-09-21T08:51:34.806</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\22.png">
+      <PackagePath>img\22.png</PackagePath>
+      <Modified>2015-09-21T08:51:34.819</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\23.png">
+      <PackagePath>img\23.png</PackagePath>
+      <Modified>2015-09-21T08:51:34.830</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\24.png">
+      <PackagePath>img\24.png</PackagePath>
+      <Modified>2015-09-21T08:51:34.841</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\25.png">
+      <PackagePath>img\25.png</PackagePath>
+      <Modified>2015-09-21T08:51:34.855</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\26.png">
+      <PackagePath>img\26.png</PackagePath>
+      <Modified>2015-09-21T08:51:34.868</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\27.png">
+      <PackagePath>img\27.png</PackagePath>
+      <Modified>2015-09-21T08:51:34.879</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\28.png">
+      <PackagePath>img\28.png</PackagePath>
+      <Modified>2015-09-21T08:51:34.890</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\29.png">
+      <PackagePath>img\29.png</PackagePath>
+      <Modified>2015-09-21T08:51:34.903</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\3.png">
+      <PackagePath>img\3.png</PackagePath>
+      <Modified>2015-09-21T08:51:34.569</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\30.png">
+      <PackagePath>img\30.png</PackagePath>
+      <Modified>2015-09-21T08:51:34.916</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\31.png">
+      <PackagePath>img\31.png</PackagePath>
+      <Modified>2015-09-21T08:51:34.928</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\32.png">
+      <PackagePath>img\32.png</PackagePath>
+      <Modified>2015-09-21T08:51:34.941</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\33.png">
+      <PackagePath>img\33.png</PackagePath>
+      <Modified>2015-09-22T11:12:55.312</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\34.png">
+      <PackagePath>img\34.png</PackagePath>
+      <Modified>2015-09-22T11:12:55.281</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\35.png">
+      <PackagePath>img\35.png</PackagePath>
+      <Modified>2015-09-22T11:12:55.296</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\36.png">
+      <PackagePath>img\36.png</PackagePath>
+      <Modified>2015-09-22T11:12:55.296</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\37.png">
+      <PackagePath>img\37.png</PackagePath>
+      <Modified>2015-09-22T11:13:18.634</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\38.png">
+      <PackagePath>img\38.png</PackagePath>
+      <Modified>2015-09-22T11:13:18.649</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\39.png">
+      <PackagePath>img\39.png</PackagePath>
+      <Modified>2015-09-22T11:13:18.712</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\4.png">
+      <PackagePath>img\4.png</PackagePath>
+      <Modified>2015-09-21T08:51:34.581</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\40.png">
+      <PackagePath>img\40.png</PackagePath>
+      <Modified>2015-09-22T11:13:18.712</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\41.png">
+      <PackagePath>img\41.png</PackagePath>
+      <Modified>2015-09-22T11:13:18.727</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\42.png">
+      <PackagePath>img\42.png</PackagePath>
+      <Modified>2015-09-22T11:13:18.743</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\43.png">
+      <PackagePath>img\43.png</PackagePath>
+      <Modified>2015-09-22T11:13:18.743</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\44.png">
+      <PackagePath>img\44.png</PackagePath>
+      <Modified>2015-09-22T11:13:18.555</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\45.png">
+      <PackagePath>img\45.png</PackagePath>
+      <Modified>2015-09-22T11:13:18.555</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\46.png">
+      <PackagePath>img\46.png</PackagePath>
+      <Modified>2015-09-22T11:13:18.571</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\47.png">
+      <PackagePath>img\47.png</PackagePath>
+      <Modified>2015-09-22T11:13:18.571</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\48.png">
+      <PackagePath>img\48.png</PackagePath>
+      <Modified>2015-09-22T11:13:18.587</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\49.png">
+      <PackagePath>img\49.png</PackagePath>
+      <Modified>2015-09-22T11:13:18.587</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\5.png">
+      <PackagePath>img\5.png</PackagePath>
+      <Modified>2015-09-21T08:51:34.595</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\50.png">
+      <PackagePath>img\50.png</PackagePath>
+      <Modified>2015-09-22T11:13:18.602</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\51.png">
+      <PackagePath>img\51.png</PackagePath>
+      <Modified>2015-09-22T11:13:18.602</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\52.png">
+      <PackagePath>img\52.png</PackagePath>
+      <Modified>2015-09-22T11:13:18.618</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\53.png">
+      <PackagePath>img\53.png</PackagePath>
+      <Modified>2015-09-22T11:13:18.618</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\54.png">
+      <PackagePath>img\54.png</PackagePath>
+      <Modified>2015-09-22T11:13:18.634</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\55.png">
+      <PackagePath>img\55.png</PackagePath>
+      <Modified>2015-09-22T11:14:15.033</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\56.png">
+      <PackagePath>img\56.png</PackagePath>
+      <Modified>2015-09-22T11:14:15.049</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\57.png">
+      <PackagePath>img\57.png</PackagePath>
+      <Modified>2015-09-22T11:14:15.049</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\6.png">
+      <PackagePath>img\6.png</PackagePath>
+      <Modified>2015-09-21T08:51:34.609</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\7.png">
+      <PackagePath>img\7.png</PackagePath>
+      <Modified>2015-09-21T08:51:34.621</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\8.png">
+      <PackagePath>img\8.png</PackagePath>
+      <Modified>2015-09-21T08:51:34.633</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\88.png">
+      <PackagePath>img\88.png</PackagePath>
+      <Modified>2015-09-22T11:14:15.064</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\89.png">
+      <PackagePath>img\89.png</PackagePath>
+      <Modified>2015-09-22T11:14:13.856</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\9.png">
+      <PackagePath>img\9.png</PackagePath>
+      <Modified>2015-09-21T08:51:34.647</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\90.png">
+      <PackagePath>img\90.png</PackagePath>
+      <Modified>2015-09-22T11:14:13.871</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\91.png">
+      <PackagePath>img\91.png</PackagePath>
+      <Modified>2015-09-22T11:14:13.871</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\92.png">
+      <PackagePath>img\92.png</PackagePath>
+      <Modified>2015-09-22T11:14:13.871</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\93.png">
+      <PackagePath>img\93.png</PackagePath>
+      <Modified>2015-09-22T11:14:13.887</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\94.png">
+      <PackagePath>img\94.png</PackagePath>
+      <Modified>2015-09-22T11:14:13.918</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\95.png">
+      <PackagePath>img\95.png</PackagePath>
+      <Modified>2015-09-22T11:14:13.918</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\96.png">
+      <PackagePath>img\96.png</PackagePath>
+      <Modified>2015-09-22T11:14:13.934</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\97.png">
+      <PackagePath>img\97.png</PackagePath>
+      <Modified>2015-09-22T11:14:13.949</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\98.png">
+      <PackagePath>img\98.png</PackagePath>
+      <Modified>2015-09-22T11:14:13.949</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\99.png">
+      <PackagePath>img\99.png</PackagePath>
+      <Modified>2015-09-22T11:14:13.965</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\bullet0.png">
+      <PackagePath>img\bullet0.png</PackagePath>
+      <Modified>2015-09-22T11:14:49.471</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\bullet1.png">
+      <PackagePath>img\bullet1.png</PackagePath>
+      <Modified>2015-09-22T11:14:49.486</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\house0.png">
+      <PackagePath>img\house0.png</PackagePath>
+      <Modified>2015-09-22T11:15:27.159</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\house1.png">
+      <PackagePath>img\house1.png</PackagePath>
+      <Modified>2015-09-22T11:15:27.190</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\house2.png">
+      <PackagePath>img\house2.png</PackagePath>
+      <Modified>2015-09-22T11:15:27.190</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\item0.png">
+      <PackagePath>img\item0.png</PackagePath>
+      <Modified>2015-09-22T11:15:27.144</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\item1.png">
+      <PackagePath>img\item1.png</PackagePath>
+      <Modified>2015-09-22T11:15:27.159</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\tank0.png">
+      <PackagePath>img\tank0.png</PackagePath>
+      <Modified>2015-09-20T09:30:48.892</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\tank1.png">
+      <PackagePath>img\tank1.png</PackagePath>
+      <Modified>2015-09-22T11:15:48.389</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\tank2.png">
+      <PackagePath>img\tank2.png</PackagePath>
+      <Modified>2015-09-21T10:31:12.538</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\title.png">
+      <PackagePath>img\title.png</PackagePath>
+      <Modified>2015-09-22T11:16:10.478</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\turret0.png">
+      <PackagePath>img\turret0.png</PackagePath>
+      <Modified>2015-09-22T01:11:04.556</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\turret1.png">
+      <PackagePath>img\turret1.png</PackagePath>
+      <Modified>2015-09-22T11:15:57.858</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\turret2.png">
+      <PackagePath>img\turret2.png</PackagePath>
+      <Modified>2015-09-22T11:15:57.858</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\turret4.png">
+      <PackagePath>img\turret4.png</PackagePath>
+      <Modified>2015-09-22T11:16:00.530</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\wrack0.png">
+      <PackagePath>img\wrack0.png</PackagePath>
+      <Modified>2015-09-22T11:16:23.333</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\wrack1.png">
+      <PackagePath>img\wrack1.png</PackagePath>
+      <Modified>2015-09-22T11:16:23.317</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\wrack2.png">
+      <PackagePath>img\wrack2.png</PackagePath>
+      <Modified>2015-09-22T11:16:23.317</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\crosshair.cur">
+      <PackagePath>img\crosshair.cur</PackagePath>
+      <Modified>2015-09-22T11:14:55.780</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\grass3.jpg">
+      <PackagePath>img\grass3.jpg</PackagePath>
+      <Modified>2015-09-19T01:54:37.818</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\military2.jpg">
+      <PackagePath>img\military2.jpg</PackagePath>
+      <Modified>2015-10-05T09:53:14.952</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\bin\Debug\2Dtank_sim_game.xr.xml">
+      <PackagePath>2Dtank_sim_game.xr.xml</PackagePath>
+      <Modified>2015-10-05T11:18:28.755</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2015-09-18T06:56:56.071</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2015-10-05T11:18:29.235</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-10-05T10:04:41.467</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

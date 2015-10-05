@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{32E15400-2BBC-4D79-A268-DABF498F65CB}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_2Dtank_sim_game</RootNamespace>
+    <AssemblyName>2Dtank_sim_game</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformVersion>8.1</TargetPlatformVersion>
+    <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>2Dtank_sim_game_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="models\Bullet.cs" />
+    <Compile Include="models\Cache.cs" />
+    <Compile Include="models\Effect.cs" />
+    <Compile Include="models\Game.cs" />
+    <Compile Include="models\House.cs" />
+    <Compile Include="models\Tank.cs" />
+    <Compile Include="models\Turret.cs" />
+    <Compile Include="models\Wreck.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="2Dtank_sim_game_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Logo.scale-100.png" />
+    <Content Include="Assets\SmallLogo.scale-100.png" />
+    <Content Include="Assets\SplashScreen.scale-100.png" />
+    <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="img\1.png" />
+    <Content Include="img\10.png" />
+    <Content Include="img\100.png" />
+    <Content Include="img\101.png" />
+    <Content Include="img\102.png" />
+    <Content Include="img\103.png" />
+    <Content Include="img\104.png" />
+    <Content Include="img\105.png" />
+    <Content Include="img\106.png" />
+    <Content Include="img\107.png" />
+    <Content Include="img\108.png" />
+    <Content Include="img\109.png" />
+    <Content Include="img\11.png" />
+    <Content Include="img\110.png" />
+    <Content Include="img\111.png" />
+    <Content Include="img\112.png" />
+    <Content Include="img\113.png" />
+    <Content Include="img\114.png" />
+    <Content Include="img\115.png" />
+    <Content Include="img\116.png" />
+    <Content Include="img\117.png" />
+    <Content Include="img\118.png" />
+    <Content Include="img\119.png" />
+    <Content Include="img\12.png" />
+    <Content Include="img\120.png" />
+    <Content Include="img\121.png" />
+    <Content Include="img\122.png" />
+    <Content Include="img\123.png" />
+    <Content Include="img\124.png" />
+    <Content Include="img\125.png" />
+    <Content Include="img\126.png" />
+    <Content Include="img\127.png" />
+    <Content Include="img\128.png" />
+    <Content Include="img\129.png" />
+    <Content Include="img\13.png" />
+    <Content Include="img\130.png" />
+    <Content Include="img\131.png" />
+    <Content Include="img\132.png" />
+    <Content Include="img\133.png" />
+    <Content Include="img\134.png" />
+    <Content Include="img\135.png" />
+    <Content Include="img\136.png" />
+    <Content Include="img\137.png" />
+    <Content Include="img\138.png" />
+    <Content Include="img\139.png" />
+    <Content Include="img\14.png" />
+    <Content Include="img\140.png" />
+    <Content Include="img\141.png" />
+    <Content Include="img\142.png" />
+    <Content Include="img\143.png" />
+    <Content Include="img\144.png" />
+    <Content Include="img\145.png" />
+    <Content Include="img\146.png" />
+    <Content Include="img\147.png" />
+    <Content Include="img\148.png" />
+    <Content Include="img\149.png" />
+    <Content Include="img\15.png" />
+    <Content Include="img\150.png" />
+    <Content Include="img\151.png" />
+    <Content Include="img\152.png" />
+    <Content Include="img\153.png" />
+    <Content Include="img\154.png" />
+    <Content Include="img\155.png" />
+    <Content Include="img\156.png" />
+    <Content Include="img\157.png" />
+    <Content Include="img\158.png" />
+    <Content Include="img\159.png" />
+    <Content Include="img\16.png" />
+    <Content Include="img\160.png" />
+    <Content Include="img\161.png" />
+    <Content Include="img\162.png" />
+    <Content Include="img\163.png" />
+    <Content Include="img\164.png" />
+    <Content Include="img\165.png" />
+    <Content Include="img\166.png" />
+    <Content Include="img\167.png" />
+    <Content Include="img\168.png" />
+    <Content Include="img\17.png" />
+    <Content Include="img\18.png" />
+    <Content Include="img\19.png" />
+    <Content Include="img\2.png" />
+    <Content Include="img\20.png" />
+    <Content Include="img\21.png" />
+    <Content Include="img\22.png" />
+    <Content Include="img\23.png" />
+    <Content Include="img\24.png" />
+    <Content Include="img\25.png" />
+    <Content Include="img\26.png" />
+    <Content Include="img\27.png" />
+    <Content Include="img\28.png" />
+    <Content Include="img\29.png" />
+    <Content Include="img\3.png" />
+    <Content Include="img\30.png" />
+    <Content Include="img\31.png" />
+    <Content Include="img\32.png" />
+    <Content Include="img\33.png" />
+    <Content Include="img\34.png" />
+    <Content Include="img\35.png" />
+    <Content Include="img\36.png" />
+    <Content Include="img\37.png" />
+    <Content Include="img\38.png" />
+    <Content Include="img\39.png" />
+    <Content Include="img\4.png" />
+    <Content Include="img\40.png" />
+    <Content Include="img\41.png" />
+    <Content Include="img\42.png" />
+    <Content Include="img\43.png" />
+    <Content Include="img\44.png" />
+    <Content Include="img\45.png" />
+    <Content Include="img\46.png" />
+    <Content Include="img\47.png" />
+    <Content Include="img\48.png" />
+    <Content Include="img\49.png" />
+    <Content Include="img\5.png" />
+    <Content Include="img\50.png" />
+    <Content Include="img\51.png" />
+    <Content Include="img\52.png" />
+    <Content Include="img\53.png" />
+    <Content Include="img\54.png" />
+    <Content Include="img\55.png" />
+    <Content Include="img\56.png" />
+    <Content Include="img\57.png" />
+    <Content Include="img\6.png" />
+    <Content Include="img\7.png" />
+    <Content Include="img\8.png" />
+    <Content Include="img\88.png" />
+    <Content Include="img\89.png" />
+    <Content Include="img\9.png" />
+    <Content Include="img\90.png" />
+    <Content Include="img\91.png" />
+    <Content Include="img\92.png" />
+    <Content Include="img\93.png" />
+    <Content Include="img\94.png" />
+    <Content Include="img\95.png" />
+    <Content Include="img\96.png" />
+    <Content Include="img\97.png" />
+    <Content Include="img\98.png" />
+    <Content Include="img\99.png" />
+    <Content Include="img\bullet0.png" />
+    <Content Include="img\bullet1.png" />
+    <Content Include="img\crosshair.cur" />
+    <Content Include="img\grass3.jpg" />
+    <Content Include="img\house0.png" />
+    <Content Include="img\house1.png" />
+    <Content Include="img\house2.png" />
+    <Content Include="img\item0.png" />
+    <Content Include="img\item1.png" />
+    <Content Include="img\military2.jpg" />
+    <Content Include="img\tank0.png" />
+    <Content Include="img\tank1.png" />
+    <Content Include="img\tank2.png" />
+    <Content Include="img\title.png" />
+    <Content Include="img\turret0.png" />
+    <Content Include="img\turret1.png" />
+    <Content Include="img\turret2.png" />
+    <Content Include="img\turret4.png" />
+    <Content Include="img\wrack0.png" />
+    <Content Include="img\wrack1.png" />
+    <Content Include="img\wrack2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

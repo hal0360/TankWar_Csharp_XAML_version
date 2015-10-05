@@ -464,7 +464,7 @@ namespace _2Dtank_sim_game
             game.player.act = Act.stop;
         }
 
-        private void nigger(object sender, PointerRoutedEventArgs e)
+        private void triggy(object sender, PointerRoutedEventArgs e)
         {
             game.player.turret.targetAngle = Math.Atan2(e.GetCurrentPoint(canvas1).Position.X - game.player.posX, game.player.posY - e.GetCurrentPoint(canvas1).Position.Y);
         }

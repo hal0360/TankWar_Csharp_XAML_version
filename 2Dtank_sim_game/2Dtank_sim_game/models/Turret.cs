@@ -130,8 +130,8 @@ namespace _2Dtank_sim_game.models
             imgName = "turret0.png";
             offX = 14;
             offY = 30;
-            turnRate = 0.05;
-            fireRate = 19;
+            turnRate = 0.08;
+            fireRate = 12;
             range = 450;
         }
 

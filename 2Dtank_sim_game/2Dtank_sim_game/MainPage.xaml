@@ -12,13 +12,13 @@
             <Canvas.Clip>
                 <RectangleGeometry Rect="0,0,1024,800"/>
             </Canvas.Clip>
-            <Image Source="img/grass3.jpg" Canvas.Left="512"/>
-            <Image Source="img/grass3.jpg"/>
-            <Image Source="img/grass3.jpg" Canvas.Top="512"/>
-            <Image Source="img/grass3.jpg" Canvas.Top="512" Canvas.Left="512"/>
+            <Image x:Name="startpage" Visibility="Visible" Source="img/military2.jpg" />
+            <Image x:Name="title" Visibility="Visible" Source="img/title.png" Canvas.Left="182" Canvas.Top="166" /> 
             
         </Canvas>
         <Canvas x:Name="canvas2" Visibility="Collapsed" HorizontalAlignment="Left" Height="72" Margin="1244,408,0,0" VerticalAlignment="Top" Width="78"/>
-        <Button x:Name="button" Visibility="Collapsed" Content="Button" HorizontalAlignment="Center" Height="90" Width="306"/>
+        <Button x:Name="button2" Visibility="Visible" FontSize="35" Content="Start Game" HorizontalAlignment="Center" Height="90" Width="306" Click="button2_Click" Margin="0,200,0,0"/>
+        <TextBlock x:Name="textBlock" Visibility="Collapsed" HorizontalAlignment="Center" Height="119" FontSize="50" TextWrapping="Wrap" Text="Game Paused. Press SPACE again to resume" Margin="0,-100,0,0"/>
+        
     </Grid>
 </Page>

@@ -31,6 +31,7 @@ namespace _2Dtank_sim_game
         private DispatcherTimer timer;
         private Game game;
         private bool stopflag;
+        private bool notstarted;
         private List<BitmapImage> smallExplode = new List<BitmapImage>();
         private List<BitmapImage> bigExplode = new List<BitmapImage>();
         private List<BitmapImage> smallImpact = new List<BitmapImage>();
@@ -52,16 +53,21 @@ namespace _2Dtank_sim_game
         private BitmapImage smallWreck;
         private BitmapImage bigWreck;
 
+        private Image cann1;
+        private Image cann2;
+        private Image cann3;
+        private Image cann4;
+
+        private BitmapImage backimg;
+
         public MainPage()
         {
-
-            Window.Current.CoreWindow.PointerCursor = new CoreCursor(CoreCursorType.Cross, 1);
-
+            notstarted = true;
+            Window.Current.CoreWindow.PointerCursor = new CoreCursor(CoreCursorType.Arrow, 1);
+            stopflag = true;
             // ApplicationView. = ApplicationViewWindowingMode.FullScreen;
-            stopflag = false;
             BitmapImage dummyMap;
             this.InitializeComponent();
- 
 
             for (int i = 11; i < 32; i += 1)
             {
@@ -144,21 +150,11 @@ namespace _2Dtank_sim_game
             bigWreck = new BitmapImage(new Uri("ms-appx:/img/wrack2.png"));
             setCanvas1(bigWreck);
 
+
+            backimg = new BitmapImage(new Uri("ms-appx:/img/grass3.jpg"));
+
             //canvas2.Children.Clear();
 
-            game = new Game();
-            game.player.img = setCanvas(playerImage);
-            game.player.turret.img = setCanvas(playerTurImage);
-            Canvas.SetZIndex(game.player.img, 2);
-            Canvas.SetZIndex(game.player.turret.img, 2);
-
-            for (int i = 0; i < game.houses.Count; i += 1)
-            {
-                game.houses[i].img = setCanvas(houseImage);
-                Canvas.SetLeft(game.houses[i].img, game.houses[i].posX - 45.5);
-                Canvas.SetTop(game.houses[i].img, game.houses[i].posY - 72);
-                game.houses[i].img.RenderTransform = new RotateTransform() { CenterX = 45.5, CenterY = 72, Angle = game.houses[i].angle };
-            }
 
                 //carBitmap.ImageOpened += (sender, e) =>
                 // {
@@ -171,7 +167,6 @@ namespace _2Dtank_sim_game
             timer = new DispatcherTimer();
             timer.Tick += timer_Tick;
             timer.Interval = TimeSpan.FromMilliseconds(100/3);
-            timer.Start();
 
         }
 
@@ -193,6 +188,18 @@ namespace _2Dtank_sim_game
 
         private void timer_Tick(object sender, object args)
         {
+
+            if (game.deathcount > 60)
+            {
+                timer.Stop();
+                textBlock.Text = "Game Over";
+                notstarted = true;
+                textBlock.Visibility = Visibility.Visible;
+                button2.Content = "Restart Game";
+                button2.Visibility = Visibility.Visible;
+                Window.Current.CoreWindow.PointerCursor = new CoreCursor(CoreCursorType.Arrow, 1);
+
+            }
 
             for (int i = 0; i < game.removal.Count; i += 1)
             {
@@ -218,7 +225,6 @@ namespace _2Dtank_sim_game
                         game.wrecks[i].img = setCanvas(bigWreck);
                     }
                     Canvas.SetZIndex(game.wrecks[i].img, 1);
-
                 }
 
                 if (game.wrecks[i].type == 0 || game.wrecks[i].type == 1)
@@ -268,7 +274,7 @@ namespace _2Dtank_sim_game
             Canvas.SetTop(game.player.turret.img, game.player.turret.posY - game.player.turret.offY );
             game.player.turret.img.RenderTransform = new RotateTransform() { CenterX = game.player.turret.offX, CenterY = game.player.turret.offY, Angle = game.player.turret.angle*180/Math.PI };
 
-}
+           }
 
             for (int i = 0; i < game.playerBullets.Count; i += 1)
             {
@@ -429,52 +435,105 @@ namespace _2Dtank_sim_game
         }
 
         private void game_KeyDown(CoreWindow sender, KeyEventArgs args)
-        {   
-            switch (args.VirtualKey)
-            {
-                case VirtualKey.A:
-                    game.player.act = Act.left;
-                    break;
-                case VirtualKey.D:
-                    game.player.act = Act.right;
-                    break;
-                case VirtualKey.W:
-                    game.player.act = Act.up;
-                    break;
-                case VirtualKey.S:
-                    game.player.act = Act.down;
-                    break;
-                case VirtualKey.Space:
-                    if (stopflag)
-                    {
-                        timer.Start();
-                        stopflag = false;
-                    }
-                    else
-                    {
-                        timer.Stop();
-                        stopflag = true;
-                    }                
-                    break;
+        {
+            if (!notstarted && !game.dead) {
+                switch (args.VirtualKey)
+                {
+                    case VirtualKey.A:
+                        game.player.act = Act.left;
+                        break;
+                    case VirtualKey.D:
+                        game.player.act = Act.right;
+                        break;
+                    case VirtualKey.W:
+                        game.player.act = Act.up;
+                        break;
+                    case VirtualKey.S:
+                        game.player.act = Act.down;
+                        break;
+                    case VirtualKey.Space:
+                        if (stopflag)
+                        {
+                            timer.Start();
+                            stopflag = false;
+                            textBlock.Visibility = Visibility.Collapsed;
+                        }
+                        else
+                        {
+                            timer.Stop();
+                            stopflag = true;
+                            textBlock.Visibility = Visibility.Visible;
+                        }
+                        break;
+                }
             }
         }
 
         private void game_KeyUp(CoreWindow sender, KeyEventArgs args)
         {
-            game.player.act = Act.stop;
+            if (!stopflag && !game.dead && !notstarted)
+            {
+                game.player.act = Act.stop;
+            }
         }
 
         private void triggy(object sender, PointerRoutedEventArgs e)
         {
-            game.player.turret.targetAngle = Math.Atan2(e.GetCurrentPoint(canvas1).Position.X - game.player.posX, game.player.posY - e.GetCurrentPoint(canvas1).Position.Y);
+            if (!stopflag && !game.dead && !notstarted)
+            {
+   game.player.turret.targetAngle = Math.Atan2(e.GetCurrentPoint(canvas1).Position.X - game.player.posX, game.player.posY - e.GetCurrentPoint(canvas1).Position.Y);
+            }
+         
         }
 
         private void missinglink(object sender, PointerRoutedEventArgs e)
         {
-            game.player.turret.fire();
+            if (!stopflag && !game.dead && !notstarted)
+            {
+                game.player.turret.fire();
+            }
+        }
 
-            
+        private void game_re_start()
+        {
+            Window.Current.CoreWindow.PointerCursor = new CoreCursor(CoreCursorType.Cross, 1);
+            button2.Visibility = Visibility.Collapsed;
+            canvas1.Children.Clear();
 
+            cann1 = setCanvas(backimg);
+            cann2 = setCanvas(backimg);
+            Canvas.SetTop(cann2, 512);
+            cann3 = setCanvas(backimg);
+            Canvas.SetLeft(cann3, 512);
+            cann4 = setCanvas(backimg);
+            Canvas.SetLeft(cann4, 512);
+            Canvas.SetTop(cann4, 512);
+
+            stopflag = false;
+            game = new Game();
+            game.player.img = setCanvas(playerImage);
+            game.player.turret.img = setCanvas(playerTurImage);
+            Canvas.SetZIndex(game.player.img, 2);
+            Canvas.SetZIndex(game.player.turret.img, 2);
+
+            for (int i = 0; i < game.houses.Count; i += 1)
+            {
+                game.houses[i].img = setCanvas(houseImage);
+                Canvas.SetLeft(game.houses[i].img, game.houses[i].posX - 45.5);
+                Canvas.SetTop(game.houses[i].img, game.houses[i].posY - 72);
+                game.houses[i].img.RenderTransform = new RotateTransform() { CenterX = 45.5, CenterY = 72, Angle = game.houses[i].angle };
+            }
+
+            timer.Start();
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            button2.Visibility = Visibility.Collapsed;
+            textBlock.Visibility = Visibility.Collapsed;
+            textBlock.Text = "Game Paused. Press SPACE again to resume";
+            notstarted = false;
+            game_re_start();
         }
     }
 }

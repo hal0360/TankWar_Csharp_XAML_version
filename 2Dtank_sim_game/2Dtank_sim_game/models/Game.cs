@@ -9,8 +9,10 @@ namespace _2Dtank_sim_game.models
     class Game
     {
         public bool dead;
+        public int deathcount;
         public Random rnd;
         public Tank player;
+        public int gameTime;
         public List<dynamic> removal = new List<dynamic>();
         public List<Tank> enemyTanks = new List<Tank>();
         public List<Bullet> playerBullets = new List<Bullet>();
@@ -19,20 +21,21 @@ namespace _2Dtank_sim_game.models
         public List<House> houses = new List<House>();
         public List<Wreck> wrecks = new List<Wreck>();
         public List<Effect> smokes = new List<Effect>();
+        public int encounter;
 
         public Game()
         {
+            deathcount = 0;
+            encounter = 1;
+            gameTime = 0;
             dead = false;
             rnd = new Random();
             player = new PlayerTank(511, 400, 45, this);
             houses.Add(new House(340, 320, 0));
-            houses.Add(new House(480, 510, 90));
-            houses.Add(new House(600, 300, -45));
-            enemyTanks.Add(new SmallTank(-20, 400, 90, this));
-            enemyTanks.Add(new BigTank(300, 100, 145, this));
-            enemyTanks.Add(new SmallTank(650, 750, 0, this));
-            enemyTanks.Add(new SmallTank(-20, 450, 90, this));
-            enemyTanks.Add(new SmallTank(100, 650, 20, this));
+            houses.Add(new House(500, 515, 90));
+            houses.Add(new House(620, 290, -45));
+ 
+           
         }
 
         public Boolean detect_radius(double x, double y, double X, double Y, double r)
@@ -64,6 +67,78 @@ namespace _2Dtank_sim_game.models
         public void update()
         {
 
+            
+            gameTime += 1;
+
+            if (gameTime > 50)
+            {
+                if (enemyTanks.Count < 5)
+                {
+                    switch (encounter)
+                    {
+                        case 1:
+
+                            if(rnd.Next(1, 8) == 5)
+                            {
+                                enemyTanks.Add(new BigTank(560, -80, 180, this));
+                            }
+                            else
+                            {
+                                enemyTanks.Add(new SmallTank(560, -80, 180, this));
+                            }
+                            
+                            break;
+                        case 2:
+                            if (rnd.Next(1, 8) == 5)
+                            {
+                                enemyTanks.Add(new BigTank(-80, -80, 145, this));
+                            }
+                            else
+                            {
+                                enemyTanks.Add(new SmallTank(-80, -80, 145, this));
+                            }
+                            break;
+                        case 3:
+                            if (rnd.Next(1, 7) == 5)
+                            {
+                                enemyTanks.Add(new BigTank(-80, 450, 90, this));
+                            }
+                            else
+                            {
+                                enemyTanks.Add(new SmallTank(-80, 450, 90, this));
+                            }
+                            break;
+                        case 4:
+                            if (rnd.Next(1, 8) == 5)
+                            {
+                                enemyTanks.Add(new BigTank(450, 880, 0, this));
+                            }
+                            else
+                            {
+                                enemyTanks.Add(new SmallTank(450, 880, 0, this));
+                            }
+                            break;
+                        case 5:
+                            if (rnd.Next(1, 7) == 5)
+                            {
+                                enemyTanks.Add(new BigTank(1104, 500, -90, this));
+                            }
+                            else
+                            {
+                                enemyTanks.Add(new SmallTank(1104, 500, -90, this));
+                            }
+                            break;
+                    }
+                    encounter += 1;
+                    if (encounter > 5)
+                    {
+                        encounter = 1;
+                    }
+                }
+                gameTime = 0;
+            }
+
+
             if (player.live <= 0 && !dead)
             {
                 wrecks.Add(new Wreck(player.posX, player.posY, player.angle, 0));
@@ -83,6 +158,10 @@ namespace _2Dtank_sim_game.models
             {
 player.action();
             player.turret.cool();
+            }
+            else
+            {
+                deathcount += 1;
             }
 
             player.smokecount += 1;
@@ -106,26 +185,39 @@ player.action();
             for (int i = 0; i < smokes.Count; i += 1)
             {
                 smokes[i].count += 1;
-
+                smokes[i].livespan -= 1;
                 if (smokes[i].count == smokes[i].duration)
                 {
                     smokes[i].count = 0;
+                }
+                if (smokes[i].livespan <= 0)
+                {
+                    removal.Add(smokes[i].img);
+                    smokes.RemoveAt(i);
+                    i -= 1;
                 }
             }
 
             for (int i = 0; i < enemyTanks.Count; i += 1)
             {
-                
-                if (enemyTanks[i].initi <= 0)
-                {
-                    enemyTanks[i].autodrive();
-                    enemyTanks[i].rand += 1;
-                }
-                else
-                {
+
+                if (enemyTanks[i].initi > 0)
+                {                    
                     enemyTanks[i].initi -= 1;
                     enemyTanks[i].act = Act.up;
                     enemyTanks[i].action();
+                }
+                else if(enemyTanks[i].colli_border())
+                {
+                    enemyTanks[i].initi += 1;
+                    enemyTanks[i].act = Act.up;
+                    enemyTanks[i].action();
+                    enemyTanks[i].initi -= 1;
+                }
+                else
+                {
+                    enemyTanks[i].autodrive();
+                    enemyTanks[i].rand += 1;               
                 }
                 enemyTanks[i].turret.detect();
                 

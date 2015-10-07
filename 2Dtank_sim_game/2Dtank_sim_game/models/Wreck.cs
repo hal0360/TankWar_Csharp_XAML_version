@@ -13,6 +13,7 @@ namespace _2Dtank_sim_game.models
         public double angle;
         public dynamic img;
         public int type;
+        public int livespan;
 
         public Wreck(double x, double y, double a, int t)
         {
@@ -20,6 +21,8 @@ namespace _2Dtank_sim_game.models
             posY = y;
             angle = a;
             type = t;
+            livespan = 150;
+
         }
     }
 }

@@ -28,7 +28,7 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\bin\Debug\2Dtank_sim_game.exe">
       <PackagePath>2Dtank_sim_game.exe</PackagePath>
-      <Modified>2015-10-05T11:18:30.056</Modified>
+      <Modified>2015-10-07T05:19:47.777</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
@@ -684,11 +684,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\img\military2.jpg">
       <PackagePath>img\military2.jpg</PackagePath>
-      <Modified>2015-10-05T09:53:14.952</Modified>
+      <Modified>2015-10-07T01:14:26.549</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\bin\Debug\2Dtank_sim_game.xr.xml">
       <PackagePath>2Dtank_sim_game.xr.xml</PackagePath>
-      <Modified>2015-10-05T11:18:28.755</Modified>
+      <Modified>2015-10-07T05:19:31.865</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
@@ -696,7 +696,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2015-10-05T11:18:29.235</Modified>
+      <Modified>2015-10-07T05:19:47.414</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>

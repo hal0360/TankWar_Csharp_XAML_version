@@ -15,6 +15,7 @@ namespace _2Dtank_sim_game.models
         public int count;
         public int duration;
         public dynamic img;
+        public int livespan;
 
         public Effect(double x, double y, double a, int t, int d)
         {
@@ -24,6 +25,7 @@ namespace _2Dtank_sim_game.models
             posX = x;
             posY = y;
             duration = d;
+            livespan = 100;
         }
     }
    

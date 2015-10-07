@@ -166,7 +166,7 @@ namespace _2Dtank_sim_game.models
         {
             if (imgName != "tank0.png")
             {
-                if (game.detect_radius(this.posX, this.posY, game.player.posX, game.player.posY, this.w + game.player.h))
+                if (game.detect_radius(this.posX, this.posY, game.player.posX, game.player.posY, (this.w + game.player.h + this.h + game.player.w)/2))
                 {
                     return true;
                 }
@@ -278,14 +278,14 @@ namespace _2Dtank_sim_game.models
         public PlayerTank(double x, double y, double a, Game g): base(x, y, a, g)
         {
             turret = new PlayerTurret(x, y, a * Math.PI / 180, g);
-            maxlive = 100;
+            maxlive = 30;
             live = maxlive;
             offX = 18.5;
             offY = 31.5;
             h = 30;
             w = 18;
-            turnRate = 3.4377467708;
-            speed = 2.7;
+            turnRate = 4;
+            speed = 3.4;
             imgName = "tank0.png";
             radius = Math.Sqrt(Math.Pow(this.w, 2) + Math.Pow(this.h, 2));
             initi = 0;

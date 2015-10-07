@@ -21,7 +21,7 @@ namespace _2Dtank_sim_game.models
             posY = y;
             angle = a;
             type = t;
-            livespan = 150;
+            livespan = 1000;
 
         }
     }

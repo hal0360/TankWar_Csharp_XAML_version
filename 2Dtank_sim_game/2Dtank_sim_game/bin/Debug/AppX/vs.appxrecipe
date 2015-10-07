@@ -28,7 +28,7 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\bin\Debug\2Dtank_sim_game.exe">
       <PackagePath>2Dtank_sim_game.exe</PackagePath>
-      <Modified>2015-10-07T05:19:47.777</Modified>
+      <Modified>2015-10-07T06:16:02.684</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>

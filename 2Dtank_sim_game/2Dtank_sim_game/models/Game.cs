@@ -198,6 +198,17 @@ player.action();
                 }
             }
 
+            for (int i = 0; i < wrecks.Count; i += 1)
+            {
+                wrecks[i].livespan -= 1;
+                if (wrecks[i].livespan <= 0)
+                {
+                    removal.Add(wrecks[i].img);
+                    wrecks.RemoveAt(i);
+                    i -= 1;
+                }
+            }
+
             for (int i = 0; i < enemyTanks.Count; i += 1)
             {
 

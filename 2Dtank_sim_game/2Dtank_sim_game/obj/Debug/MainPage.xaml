@@ -17,9 +17,26 @@
             
         </Canvas>
         <Canvas x:Name="canvas2" Visibility="Collapsed" HorizontalAlignment="Left" Height="72" Margin="1244,408,0,0" VerticalAlignment="Top" Width="78"/>
-        <Button x:ConnectionId='2' x:Name="button2" Visibility="Visible" FontSize="35" Content="Start Game" HorizontalAlignment="Center" Height="90" Width="306"                       Margin="0,200,0,0"/>
+        <Button x:ConnectionId='2' x:Name="button2" Visibility="Visible" FontSize="35" Content="Start Game" HorizontalAlignment="Center" Height="90" Width="306"                       Margin="0,100,0,0"/>
+        <Button x:ConnectionId='3' x:Name="button3" Visibility="Visible" FontSize="35" Content="How to play" HorizontalAlignment="Center" Height="90" Width="306"                            Margin="0,400,0,0"/>
         <TextBlock x:Name="textBlock" Visibility="Collapsed" HorizontalAlignment="Center" Height="119" FontSize="50" TextWrapping="Wrap" Text="Game Paused. Press SPACE again to resume" Margin="0,-100,0,0"/>
-        
+
+        <Rectangle x:Name="rectBackgroundHide" Fill="#FF1D1D1D" HorizontalAlignment="Left" Height="117" Margin="0,319,0,0" Stroke="Black" VerticalAlignment="Top" Width="117" Visibility="Collapsed" Opacity="0.7"/>
+            <Popup  x:Name="popError">
+            <Border BorderThickness="2" BorderBrush="LightGray">
+                <Grid Height="550" Width="700" Background="#FF1D1D1D">
+                    <TextBlock HorizontalAlignment="Center" Margin="0,40,0,0" TextWrapping="Wrap" Text="Press 'W' key to move your tank forward" VerticalAlignment="Top" FontSize="30"/>
+                    <TextBlock HorizontalAlignment="Center" Margin="0,100,0,0" TextWrapping="Wrap" Text="Press 'S' key to move your tank backward" VerticalAlignment="Top" FontSize="30"/>
+                    <TextBlock HorizontalAlignment="Center" Margin="0,160,0,0" TextWrapping="Wrap" Text="Press 'A' key to turn your tank left" VerticalAlignment="Top" FontSize="30"/>
+                    <TextBlock HorizontalAlignment="Center" Margin="0,220,0,0" TextWrapping="Wrap" Text="Press 'D' key to turn your tank right" VerticalAlignment="Top" FontSize="30"/>
+                    <TextBlock HorizontalAlignment="Center" Margin="0,280,0,0" TextWrapping="Wrap" Text="Move around the mouse cursor to aim the target" VerticalAlignment="Top" FontSize="30"/>
+                    <TextBlock HorizontalAlignment="Center" Margin="0,340,0,0" TextWrapping="Wrap" Text="Press the right nouse button to fire" VerticalAlignment="Top" FontSize="30"/>
+                    <TextBlock HorizontalAlignment="Center" Margin="0,400,0,0" TextWrapping="Wrap" Text="Press SPACE bar to pause the game" VerticalAlignment="Top" FontSize="30"/>
+                    <Button x:ConnectionId='4' x:Name="btnAccept" Content="OK" HorizontalAlignment="Center" Margin="0,460,0,0" VerticalAlignment="Top" Width="180" Height="48"                         />
+                </Grid>
+            </Border>
+        </Popup>
+
     </Grid>
 </Page>
 

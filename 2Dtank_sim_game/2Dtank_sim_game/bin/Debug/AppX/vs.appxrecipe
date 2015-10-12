@@ -10,7 +10,7 @@
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>e7ded8df-d9db-4d97-8ddf-6223d86b81eb</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\obj\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>58E34A6A6AD54301C81C8FFEC438D37D90EDEB9AB2860FD4F9C6385EB7EEE64C</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>B510086A7F3ABD416177FD0004895193919F0700D80C2E99FCAA77B5513D5282</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>e7ded8df-d9db-4d97-8ddf-6223d86b81eb_1.0.0.0_neutral__3gx5rry0ccnx8</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>e7ded8df-d9db-4d97-8ddf-6223d86b81eb_3gx5rry0ccnx8!App</RegisteredUserModeAppID>
     <RegisteredPackageID>e7ded8df-d9db-4d97-8ddf-6223d86b81eb</RegisteredPackageID>
@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-10-05T10:04:42.380</Modified>
+      <Modified>2015-10-11T01:24:40.889</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\bin\Debug\2Dtank_sim_game.exe">
       <PackagePath>2Dtank_sim_game.exe</PackagePath>
-      <Modified>2015-10-07T06:16:02.684</Modified>
+      <Modified>2015-10-11T01:27:00.587</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
@@ -688,7 +688,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\bin\Debug\2Dtank_sim_game.xr.xml">
       <PackagePath>2Dtank_sim_game.xr.xml</PackagePath>
-      <Modified>2015-10-07T05:19:31.865</Modified>
+      <Modified>2015-10-11T01:02:16.253</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
@@ -696,11 +696,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2015-10-07T05:19:47.414</Modified>
+      <Modified>2015-10-11T01:10:57.098</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ACER\Documents\Visual Studio 2015\Projects\2Dtank_sim_game\2Dtank_sim_game\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-10-05T10:04:41.467</Modified>
+      <Modified>2015-10-11T01:24:40.022</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

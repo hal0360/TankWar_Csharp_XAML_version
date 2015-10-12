@@ -490,6 +490,7 @@ namespace _2Dtank_sim_game
         {
             if (!stopflag && !game.dead && !notstarted)
             {
+                game.player.turret.targetAngle = Math.Atan2(e.GetCurrentPoint(canvas1).Position.X - game.player.posX, game.player.posY - e.GetCurrentPoint(canvas1).Position.Y);
                 game.player.turret.fire();
             }
         }
@@ -497,7 +498,7 @@ namespace _2Dtank_sim_game
         private void game_re_start()
         {
             Window.Current.CoreWindow.PointerCursor = new CoreCursor(CoreCursorType.Cross, 1);
-            button2.Visibility = Visibility.Collapsed;
+
             canvas1.Children.Clear();
 
             cann1 = setCanvas(backimg);
@@ -530,10 +531,40 @@ namespace _2Dtank_sim_game
         private void button2_Click(object sender, RoutedEventArgs e)
         {
             button2.Visibility = Visibility.Collapsed;
+            button3.Visibility = Visibility.Collapsed;
             textBlock.Visibility = Visibility.Collapsed;
             textBlock.Text = "Game Paused. Press SPACE again to resume";
             notstarted = false;
             game_re_start();
+        }
+
+        private void btnAccept_Click(object sender, RoutedEventArgs e)
+        {
+            //Close it all down
+            rectBackgroundHide.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+            popError.IsOpen = false;
+        }
+
+        private void btnShowPopup_Click(object sender, RoutedEventArgs e)
+        {
+            //First we need to find out how big our window is, so we can center to it.
+            CoreWindow currentWindow = Window.Current.CoreWindow;
+
+            //Set our background rectangle to fill the entire window
+            rectBackgroundHide.Height = currentWindow.Bounds.Height;
+            rectBackgroundHide.Width = currentWindow.Bounds.Width;
+            rectBackgroundHide.Margin = new Thickness(0, 0, 0, 0);
+
+            //Make sure the background is visible
+            rectBackgroundHide.Visibility = Windows.UI.Xaml.Visibility.Visible;
+
+            //Now we figure out where the center of the screen is, and we 
+            //move the popup to that location.
+            popError.HorizontalOffset = currentWindow.Bounds.Width / 2 - 350;
+            popError.VerticalOffset = currentWindow.Bounds.Height / 2 -275;
+            popError.IsOpen = true;
+
+            //Presto!  We have a centered popup.
         }
     }
 }
